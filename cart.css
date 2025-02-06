@@ -1,0 +1,672 @@
+.latest-products {
+    margin: 0 auto;
+    max-width: 80%; /* Adjust width as needed */
+    padding: 30px 0 32px;
+    position: relative;
+    top:30px !important;
+}
+
+.latest-products h2 {
+    position: relative;
+    top: 30px !important;
+    font-size: 48px;
+    margin-bottom:5px;
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    
+}
+
+/* Small devices ke liye top 0 karne ke liye */
+@media (max-width: 768px) {  
+    .changebutton_topbutton {
+        top: -5px !important;
+    }
+    .latest-products h2 {
+        top: 0 !important;
+    }
+}
+
+
+.product-content {
+    font-size: 2rem;
+    color: #555;
+ /* Centering the content */
+}
+.changebutton_topbutton {
+    position: relative;
+    top: 30px !important;
+    background-color: #DC3545 !important;
+    padding: 2vh !important;
+    width: 200px;  /* Width badhane ke liye */
+    height: 60px;  /* Height badhane ke liye */
+    outline: none !important;
+    border: none !important;
+    font-size: 1.1rem !important;
+}
+
+.changebutton_topbutton:hover{
+background-color: #000 !important;
+}
+
+.card {
+    margin: 0 auto;
+    max-width: 100%; /* Adjust width as needed */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensures everything inside is centered */
+    text-align: center; /* Aligns text inside */
+}
+
+.card-body h5 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    text-align: center; /* Centering heading */
+}
+
+.card-body p {
+    font-size: 18px;
+    color: #E65127;
+    text-align: center; /* Centering price */
+    margin-top: 5px;
+    margin-bottom: 2px;
+
+}
+
+.card-body a {
+    margin-top: 10px; /* Add space between text and button */
+}
+.card-text del{
+    color:#555;
+}
+
+
+/* Container Background */
+.downtobotton{
+    position: relative;
+    top: 70px !important;
+}
+.why-choose-container {
+    background-color: #000;
+    padding-top: 50px !important;
+    padding-bottom: 50px;
+}
+
+/* "Why Choose Us" Heading */
+.why-choose {
+    color: #E65127;
+    font-size: 1.2rem;
+    padding: 2vh;
+}
+
+/* all button color */
+.changebutton_color{
+    background-color: #DC3545 !important;
+    border: none !important;
+    outline: none !important;
+  }
+  .changebutton_color:hover{
+    background-color: #DC3545  !important;
+
+  }
+/* end all button color */
+/* Paragraph and Heading */
+.why-choose-container h2 {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    writing-mode: inherit;
+    word-wrap: inherit;
+}
+
+.para {
+    color: white;
+    font-size: 1rem;
+    padding: 2.3vh !important;
+}
+.my-2{
+    padding: 1.9vh;
+}
+
+/* Custom Card Styles */
+.card-custom {
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Styling */
+.card-custom img{
+    font-size: 2rem;
+    color: #E65127;
+    position: relative;
+    left: 8vh;
+}
+
+@media (max-width: 1150px) {
+    .card-custom img {
+        position: static; /* Resets the position property */
+        left: 0 !important; /* Removes any left shift */
+        margin-top: 0 !important; /* Removes the margin-top */
+    }
+}
+/* start all image icons  from start */
+.align-start {
+    display: block;
+    margin-left: 0;
+    color: #FFFFFF;
+  }
+  
+  @media(max-width:900px)
+  {
+      .text-width{
+          width: 300px !important;
+      }
+  }
+
+
+
+
+
+
+
+
+
+/* footer part css start here */
+
+.footer {
+    background-color: #111;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+}
+
+/* Left Section */
+.footer-left {
+    text-align: left;
+}
+
+.logo {
+    font-size: 28px;
+    margin-bottom: 10px;
+    margin-left: 5px !important;
+}
+
+.social-icons a {
+    position: relative;
+    top: 13px !important;
+    color: white;
+    font-size: 15px;
+    margin: 20px 10px !important;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #f0542c;
+}
+
+/* Center Newsletter Section */
+.footer-center {
+    text-align: center;
+    flex: 1;
+    margin-top: 20px; /* Newsletter thoda neeche kiya */
+}
+
+.footer-center h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.footer-center p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Newsletter Form */
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    gap: 0; /* Gap hata diya taake input aur button attach ho jaye */
+    flex-direction: row; /* Ensure input and button stay in a row */
+    width: 100%;
+    max-width: 600px; /* Increase max width for better visibility on large screens */
+    margin: auto;
+}
+
+.newsletter-form input {
+    padding: 10.5px !important;
+    width: 70%; /* Increase input width */
+    max-width:200px; /* Max width for input */
+    border: none;
+    border-radius: 5px 0 0 5px; /* Left side rounded, right side straight */
+    font-size: 14px;
+    outline: none;
+}
+
+.newsletter-form button {
+    padding: 9px 20px;
+    border: none !important;
+    outline:  none !important;
+    background-color: #f0542c;
+    color: white;
+    border-radius: 0 5px 5px 0; 
+    cursor: pointer;
+    font-weight: 600 !important;
+    width: 30%; /* Reduce button width */
+    max-width: 120px; /* Ensure button doesn't grow too large */
+}
+.newsletter-form button:hover{
+    background-color: rgb(128, 128, 128) !important;
+    color: #FFFFFF;
+    font-weight: 600 !important;
+}
+
+/* image css buld your career */
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 79vh !important;
+    background: url('images/asset/bussinessman.jpg') no-repeat top center/cover; /* Changed alignment to bottom */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 7%; /* Reduced padding for a balanced look */
+  }
+  .hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(69, 68, 68, 0.4); /* Increased overlay opacity slightly */
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    max-width: 600px;
+    padding: 20px;
+    color: white;
+    z-index: 2; /* Ensure content is above the overlay */
+    animation: slide-in 1s ease-out;
+    text-align: left;
+  }
+  
+  /* .hero-content h1 {
+    font-size: 3.4rem;
+    font-weight:bolder;
+    margin-bottom: 1rem;
+  } */
+  .hero-content h1 {
+    font-size: 3.4rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    width: 100%; /* Full width le lega */
+    word-wrap: break-word; /* Ensure long words break */
+    white-space: normal; /* Proper text wrapping */
+}
+
+/* Small Devices */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 1.5rem !important; /* Reduce size for tablets */
+        text-align: left; /* Ensure left alignment */
+        width: 100% !important;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem; /* Reduce size for mobiles */
+        text-align: left;
+        padding: 0 10px; /* Add some padding */
+    }
+}
+
+.hover_icon:hover{
+  margin: 1px !important ;
+  background-color: rebeccapurple !important;
+}
+  /* .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: #FFFFFF;
+  } */
+
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    width: 100%;  /* Ensure full width */
+    word-wrap: break-word;  /* Break long words */
+    white-space: normal; /* Ensure text wraps properly */
+}
+
+/* Small Devices */
+@media (max-width: 768px) {
+    .hero-content p {
+        font-size: 1rem;  
+        margin-bottom: 1rem;
+        text-align: left; /* Ensure left alignment */
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+    .hero-content p {
+        font-size:0.9rem !important;  
+        padding: 0 10px;
+        text-align: left;
+    }
+}
+
+  
+  /* Default Button Styles (No Change) */
+.hero-content .btn {
+    display: inline-block;
+    padding: 16px 32px;
+    background: #ff5722 !important;
+    color: white;
+    font-weight: bold;
+    text-decoration: none !important;
+    border: none !important;
+    border-radius: 4px;
+    outline: none !important;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+.hero-content .btn:hover{
+    background-color: black !important;
+}
+
+/* Small Devices (Tablets & Below) */
+@media (max-width: 768px) {
+    .hero-content .btn {
+        display: block;  
+        width: fit-content; 
+        padding: 18px 40px !important;
+        margin: 0 auto 10px 0 !important; 
+        font-weight: bold !important;
+        text-align: left !important;
+        font-size:11px !important;
+        border-radius: 3px !important;
+        margin-left:0px !important;
+    }
+}
+
+/* Extra Small Devices (Mobile) */
+@media (max-width: 480px) {
+    .hero-content .btn {
+        padding: 20px 45px; /* Aur thoda padding bada diya */
+    }
+}
+
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .hero-section {
+      height: 60vh;
+      padding-left: 5%;
+    }
+  
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .hero-section {
+      height: 60vh;
+      padding-left: 5%;
+    }
+  
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  }
+  @media (min-width: 930px) {
+    .hero-section {
+      height: 60vh;
+      padding-left:5%;
+    }
+  
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-content p {
+      max-width: 80%;
+      justify-content:initial ;
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-section {
+      height: 50vh;
+    }
+  
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-content p {
+      font-size: 0.9rem;
+    }
+  
+    .hero-content .btn {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-section {
+      height: 40vh;
+      padding-left: 3%;
+    }
+  
+    .hero-content h1 {
+      font-size: 1.8rem;
+    }
+  
+    .hero-content p {
+      font-size: 0.8rem;
+    }
+  }
+  
+   @media (max-width: 972px) {
+    .hero-section {
+        height: 80vh; /* Full height for this resolution */
+        padding: 0;
+        justify-content: flex-start; /* Keep the content at the start */
+        align-items: flex-end; /* Push content to the bottom */
+        background-position: center bottom;
+    }
+
+    .hero-content {
+        max-width: 80%; /* Adjust width to fit smaller screens */
+        bottom: 5%; /* Keep content 5% away from the bottom */
+        left: 50%;
+        transform: translateX(-50%); /* Center horizontally */
+        text-align: center; /* Center text */
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem; /* Adjust heading size */
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .hero-content .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+@media(max-width: 540px)
+{
+    .hero-section {
+        height: 50vh;
+        padding-left: 3%;
+      }
+    
+      .hero-content h1 {
+        font-size: 1.4rem;
+      }
+    
+      .hero-content p {
+        font-size: 0.6rem;
+      }
+      .hero-content .btn {
+        padding: 8px 18px;
+        font-size: 0.6rem;
+    }
+}
+
+@media(max-width: 390px)
+{
+    .hero-content{
+        padding: 0px;
+    }
+    .hero-section {
+        height: 30vh;
+        padding-left: 3%;
+      }
+    
+      .hero-content h1 {
+        font-size: 0.6rem;
+        margin-bottom: 3px;
+      }
+    
+      .hero-content p {
+        font-size: 0.4rem;
+        margin-bottom: 5px;
+
+      }
+      .hero-content .btn {
+        padding: 6px 15px;
+        font-size: 0.5rem;
+    }
+}
+/* end build your career */
+
+
+/* Right Section */
+.footer-right {
+    text-align: right;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links li a:hover {
+    color: #f0542c;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    margin-top:3rem;
+    color: #6c757d !important; 
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-bottom img {
+    width: 200px;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-center {
+        margin-top: 20px; /* Keeps the newsletter centered and aligned properly */
+    }
+
+    .newsletter-form {
+        flex-direction: column; /* Stack the input and button vertically */
+        width: 100%; /* Full width */
+        max-width: 300px; /* Maintain max width */
+        margin: auto;
+    }
+
+    .newsletter-form input
+    {
+        width:500px !important; /* Both input and button take full width */
+        margin-bottom: 10px; /* Ensure space between input and button */
+        padding: 1.50vh !important;
+        border-radius: 2px;
+    }
+    .newsletter-form button{
+        padding: 10px !important;
+        width: 500px !important;
+        border-radius: 2px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+  /* newletter move to right side */
+.move_rights_side_center {
+    position: relative;
+    left: 12vh !important;
+    margin-top: 7vh !important; /* Margin on larger screens */
+}
+
+/* Remove margin-top and reset the position for screens smaller than 900px */
+@media (max-width: 1000px) {
+    .move_rights_side_center {
+        position: static; /* Resets the position property */
+        left: 0 !important; /* Removes any left shift */
+        margin-top: 0 !important; /* Removes the margin-top */
+    }
+}
+
+/* end footer part css */

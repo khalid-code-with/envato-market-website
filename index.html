@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/elementkit-icons/css/elementkit-icons.min.css">
+
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<!-- Responsive Navbar -->
+<nav class="navbar navbar-dark bg-black"id="navbar_sticky">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+        <!-- Left Side Logo -->
+        <a class="navbar-brand" href="#">
+            <img src="images/asset/logoPedestal.png" alt="Pedestal Logo" height="40" class="image-fluid">
+        </a>
+        <!-- Right Side Button -->
+        <a href="#" class="btn">Buy Now</a> 
+    </div>
+</nav>
+<!-- End Navbar -->
+
+  <!-- discount-top -->
+  <div class="container-fluid  text-white px-3"id="discount">
+    <div class="row align-items-center text-center text-lg-start">
+        <!-- Discount Text -->
+        <div class="col-lg-6 fs-9">
+            Discount up to 50% only this month. Use Code "FONNIAPROMO" before checkout.
+        </div>
+        <!-- Phone Number -->
+        <div class="col-lg-3 mt-2 mt-lg-0 text-lg-end pe-lg-2"> 
+            <span>
+                <a href="" class="icons g-3 me-1 mt-1">
+                    <i class="fa-solid fa-phone hidden_icons mt-1"></i>
+                </a>
+                <span class="hidden_icons">+(62)21 2002-2012</span>
+            </span>
+         </div>
+        <!-- Social Icons -->
+        <div class="col-lg-3 mt-2 mt-lg-0 text-lg-end icons-container">
+            <a href="#" class="icon hidden_icons me-4"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="icon hidden_icons me-4"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="icon hidden_icons"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+</div>
+ <!-- end discound -->
+    
+ <!-- navbar options show show -->
+ <nav class="navbar navbar-expand-lg bg-white py-3 menu_bar" id="navbarSupportedContent">
+    <div class="container-fluid">
+      <!-- Left Logo -->
+      <div class="logo_fonia me-5">
+        <img src="images/asset/fonia_logo.jpg" alt="Logo" class="img-fluid" width="80px">
+      </div>
+      <!-- Toggle Button for Mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto gap-3"> 
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Shops
+            </a>  
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Single product</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link active" href="#">Service</a></li> 
+          <li class="nav-item"><a class="nav-link active" href="#">About Us</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Contacts Us</a></li>
+          <li class="nav-item dropdown"> 
+            <a class="nav-link dropdown-toggle" href="#" id="navbarPages" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pages
+            </a>  
+            <ul class="dropdown-menu" aria-labelledby="navbarPages">
+              <li><a class="dropdown-item" href="#">Login page</a></li>
+              <li><a class="dropdown-item" href="#">Team</a></li>
+              <li><a class="dropdown-item" href="#">Blog</a></li>
+              <li><a class="dropdown-item" href="#">Single Post</a></li>
+              <li><a class="dropdown-item" href="#">FAQ</a></li>
+              <li><a class="dropdown-item" href="#">Error 404</a></li>
+            </ul>
+          </li>
+        </ul>
+  
+        <!-- Search & Icons Section -->
+        <form class="d-flex align-items-center search-container">
+          <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-dark search-btn" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div> 
+    </div>
+  </nav>
+  
+  <!-- home part our website -->
+  <div class="container">
+    <div class="text-section">
+        <h1 class="reducewidth">Type is what meaning looks like.</h1>
+        <p class="reducewidth">Id posuere feugiat adipiscing euismod elit est quam montes accumsan</p>
+        <a href="#" class="discover_button reducewidthbutton">Discover More</a>
+    </div>
+    <div class="image-section">
+        <img src="images/asset/text-image.jpg"class="img-fluid d-block mx-auto reducewidthimage" alt="Font Logo">
+    </div>
+</div>
+ <!-- cart part start here -->
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col">
+        <div class="container moveontop">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card text-center p-4">
+                        <img src="images/asset/js/photo.png" alt="" class="img-fluid mx-auto d-block" width="45px">
+                        <h5 class="card-title mt-3 mb-3">Type Designer</h5>
+                        <p class="card-text">Bibendum ad gravida hac auctor et risus eleifend viverra neque nunc ac.</p>
+                    </div>
+                </div>
+                
+        
+                <div class="col-md-3">
+                    <div class="card text-center p-4">
+                  <img src="images/asset/js/photo.png" alt="" class="img-fluid mx-auto d-block" width="45px">
+                        <h5 class="card-title mt-3 mb-3">Logo Designer</h5>
+                        <p class="card-text">Bibendum ad gravida hac auctor et risus eleifend viverra neque nunc ac.</p>
+                    </div>
+                </div>
+        
+                <div class="col-md-3">
+                  <div class="card text-center p-4">
+                <img src="images/asset/js/photo.png" alt="" class="img-fluid mx-auto d-block" width="45px">
+                      <h5 class="card-title mt-3 mb-3">Illustrute</h5>
+                      <p class="card-text">Bibendum ad gravida hac auctor et risus eleifend viverra neque nunc ac.</p>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card text-center p-4">
+              <img src="images/asset/js/photo.png" alt="" class="img-fluid mx-auto d-block" width="45px">
+                    <h5 class="card-title mt-3 mb-3">brand kit</h5>
+                    <p class="card-text">Bibendum ad gravida hac auctor et risus eleifend viverra neque nunc ac.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+  </div>
+
+ <!-- end card part -->
+      <style>
+      </style>
+ <div class="container studio-section">
+    <div class="row align-items-center">
+        <!-- Left Side -->
+        <div class="col-12 col-md-6">
+            <h3>About Our Studio</h3>
+            <h1>Type design is about function. Drawing<br> pretty shapes isn't enough.</h1>
+        </div>
+        <!-- Right Side -->
+        <div class="col-12 col-md-6 paragraph-content ">
+            <div class="container">
+            <p>Penatibus maximus suscipit class pellentesque platea. Convallis letius vel curabitur ridiculus ante. Montes congue tellus placerat. Habitant vulputate lacinia cursus elit finibus. Sodales ultrices quis risus elementum. Purus suscipit dapibus taciti volutpat tristique. Donec elit justo dapibus. Per mollis tortor leo maximus sem.</p>
+            <p>Mus vivamus tristique commodo. Pretium nulla rhoncus adipiscing fringilla maximus. Maximus sed auctor integer dapibus fringilla quisque dictumst. Platea senectus aliquam eget. Rhoncus vestibulum magna dui hendrerit venenatis lectus ridiculus. Vel magna tempor imperdiet. Leo pede ipsum erat sollicitudin commodo cursus amet. Parturient imperdiet nunc gravida per neque in.</p>
+        </div>
+    </div>
+    </div>
+</div>
+  <!-- end navbar options show  -->
+ <!-- veshali cart  -->
+ <div class="container latest-products">
+  <h2>Latest Product</h2>
+  <!-- Flexbox wrapper to align the button to the right -->
+  <div class="d-flex justify-content-end">
+      <button type="button" class="btn btn-danger changebutton_topbutton" onclick="scrollToTop()">View More</button>
+  </div>
+</div>
+<div class="container">
+  <div class="row row-cols-2 row-cols-md-4 g-4">
+      <div class="col">
+          <div class="card">
+              <img src="images/asset/img1.png" class="card-img-top" alt="...">
+              <div class="card-body"> 
+                  <h5 class="card-title">Higher Luck – Modern Script Font</h5>
+                  <p class="card-text"><span>$</span>20.00<span>-</span><span>$</span>250.00</p>
+                  <a href="#" class="btn btn-danger changebutton_color">Add to Cart</a>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card">
+              <img src="images/asset/img2.jpg" class="card-img-top" alt="...">
+              <div class="card-body"> 
+                  <h5 class="card-title">Branding Kit Design Bundle Pack</h5>
+                  <p class="card-text"><span>$</span>249.00</p>
+                  <a href="#" class="btn btn-danger changebutton_color">Add to Cart</a>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card">
+              <img src="images/asset/img3.jpg" class="card-img-top" alt="...">
+              <div class="card-body"> 
+                  <h5 class="card-title">Stationery Kit Design Bundle Pack</h5>
+                  <p class="card-text"><del><span>$</span>149.00</del><span> $</span>129.00</p>
+                  <a href="#" class="btn btn-danger changebutton_color">Add to Cart</a>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card">
+              <img src="images/asset/img4.jpg" class="card-img-top" alt="...">
+              <div class="card-body"> 
+                  <h5 class="card-title">Stationery Kit Design</h5>
+                  <p class="card-text"><del><span>$</span>149.00</del><span> $</span>129.00</p>
+                  <a href="#" class="btn btn-danger changebutton_color">Add to Cart</a>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card">
+              <img src="images/asset/img5.jpg" class="card-img-top" alt="...">
+              <div class="card-body"> 
+                  <h5 class="card-title">Letter U (United) Logo</h5>
+                  <p class="card-text"><del><span>$</span>149.00</del><span> $</span>129.00</p>
+                  <a href="#" class="btn btn-danger changebutton_color">Add to Cart</a>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card">
+              <img src="images/asset/img6.jpg" class="card-img-top" alt="...">
+              <div class="card-body"> 
+                  <h5 class="card-title">Letter A Triangle Logo Design</h5>
+                  <p class="card-text"><span>$</span>149.00</p>
+                  <a href="#" class="btn btn-danger changebutton_color">Add to Cart</a>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card">
+              <img src="images/asset/img7.jpg" class="card-img-top" alt="...">
+              <div class="card-body"> 
+                  <h5 class="card-title">Letter A logo Design</h5>
+                  <p class="card-text"><del><span>$</span>149.00</del><span> $</span>129.00</p>
+                  <a href="#" class="btn btn-danger changebutton_color ">Add to Cart</a>
+              </div>
+          </div>
+      </div>
+    
+      <div class="col">
+          <div class="card">
+              <img src="images/asset/img8.jpg" class="card-img-top" alt="...">
+              <div class="card-body"> 
+                  <h5 class="card-title">Gilberta Signature Font</h5>
+                  <p class="card-text"><span>$</span>20.00<span>-</span><span>$</span>250.00</p>
+                  <a href="#" class="btn btn-danger changebutton_color">Add to Cart</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+ <!-- end vshalid cart -->
+<style>
+    .no-hover{
+  pointer-events: none !important;
+}
+
+</style>
+<!-- why choose us cart start here -->
+ <div class="downtobotton">
+<div class="container-fluid py-5 why-choose-container">
+    <div class="row">
+        <!-- Image Column -->
+        <div class="col-lg-6">
+            <img src="images/asset/img9.jpg" alt="Why Choose Us" class="img-fluid w-100 h-100">
+        </div>
+        
+        <!-- Content Column -->
+        <div class="col-lg-6 d-flex flex-column justify-content-center"id="down_top">
+            <div class="why-choose">Why choose us</div>
+            <h2 class="my-2">Professional, Experienced and Affordable</h2>
+            <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <!-- Cards Section -->
+                <div class="col-6">
+                    <div class="card-custom text-center">
+                        <div class="icon no-hover">
+                           
+                             <img src="images/asset/creative.png"class="align-start image-fluid" alt="" srcset="" width="45px">
+                        </div>
+                        <h5 class="mt-3 text-start">Creative</h5>
+                        <p class="text-wrap w-100 text-width">Bibendum ad gravida hac auctor et risus eleifend viverra neque nunc ac.</p>                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card-custom text-center">
+                        <div class="icon no-hover">
+                            <img src="images/asset/diamond-icons.png"class="align-start image-fluid" alt="" srcset="" width="35px">
+                        </div>
+                        <h5 class="mt-3 text-start">Prestigious</h5>
+                        <p>Bibendum ad gravida hac auctor et risus eleifend viverra neque nunc ac.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card-custom text-center">
+                        <div class="icon no-hover">
+                            <img src="images/asset/communitive.png"class="align-start image-fluid" alt="" srcset=""width="35px">
+                        </div>
+                        <h5 class="mt-3 text-start">Communicative</h5>
+                        <p>Bibendum ad gravida hac auctor et risus eleifend viverra neque nunc ac.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card-custom text-center">
+                        <div class="icon no-hover">
+                            <img src="images/asset/support_icon.png"  class="align-start image-fluid" alt="" srcset="" width="35px">
+                        </div>
+                        <h5 class="mt-3 text-start">Support</h5>
+                        <p>Bibendum ad gravida hac auctor et risus eleifend viverra neque nunc ac.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<style>
+</style>
+  <!-- testimonial website -->
+    <!-- Testimonial Section -->
+    <div class="container-fluid testimonial">
+      <div class="container text-center py-5 d-flex flex-column align-items-center">
+          <p class="text-color fw-bold fs-5 mb-2">Testimonial</p>
+          <h1 class="fw-bold mb-2">What They Say</h1>
+          <p class="fs-5 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+  <div class="container-fluid mt-5"id="moveontopside">
+    <div class="row d-flex justify-content-between">
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card p-4 shadow-lg">
+            <div class="text-start mb-4 mt-2 start_color_changes">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+          
+            <p class="text-start fs-5 paragraph">Ad efficitur imperdiet curabitur dis ex egestas interdum sagittis et. Accumsan tempus sed lobortis sit molestie rutrum montes justo. Sed magnis non proin primis commodo enim efficitur. Malesuada fusce elementum est luctus litora ipsum.</p>
+    
+           
+            <div class="d-flex justify-content-between align-items-end">
+              
+                <div class="d-flex align-items-center">
+                    <img src="images/asset/person1.jpg" class="rounded-circle me-3 img-fluid reduce_size" width="60" height="60" alt="User Image">
+                    <div>
+                        <strong class="d-block reduce_size">Timothy Saver </strong>
+                        <span class="text-muted text_color reduce_size">Business Owner</span>
+                    </div>
+                </div>
+               
+                <i class="fas fa-quote-right fs-2 double"></i>
+            </div>
+        </div>
+    </div>
+  
+    
+     <div class="col-lg-4 col-md-6 col-sm-12 mb-4 ">
+      <div class="card p-4 shadow-lg">
+      
+          <div class="text-start  mb-4 mt-2 start_color_changes">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+          </div>
+  
+        
+          <p class="text-start fs-5 paragraph">Ad efficitur imperdiet curabitur dis ex egestas interdum sagittis et. Accumsan tempus sed lobortis sit molestie rutrum montes justo. Sed magnis non proin primis commodo enim efficitur. Malesuada fusce elementum est luctus litora ipsum.</p>
+  
+        
+          <div class="d-flex justify-content-between align-items-end">
+           
+              <div class="d-flex align-items-center">
+                  <img src="images/asset/person2.jpg" class="rounded-circle me-3 img-fluid reduce_size" width="60" height="60" alt="User Image">
+                  <div>
+                      <strong class="d-block reduce_size">Georgia Lummus</strong>
+                      <span class="text-muted text_color reduce_size">Manager Lokamart</span>
+                  </div>
+              </div>
+              <i class="fas fa-quote-right fs-2 double"></i>
+          </div>
+      </div>
+  </div>
+  
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+      <div class="card p-4 shadow-lg">
+          <!-- Star Rating -->
+          <div class="text-start  mb-4 mt-2 start_color_changes">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+          </div>
+          <p class="text-start fs-5 paragraph">Ad efficitur imperdiet curabitur dis ex egestas interdum sagittis et. Accumsan tempus sed lobortis sit molestie rutrum montes justo. Sed magnis non proin primis commodo enim efficitur. Malesuada fusce elementum est luctus litora ipsum.</p>
+          <div class="d-flex justify-content-between align-items-end">
+              <!-- Left Side: Image & Name -->
+              <div class="d-flex align-items-center"> 
+                  <img src="images/asset/person3.jpg" class="rounded-circle me-3 img-fluid reduce_size" width="60" height="60" alt="User Image">
+                  <div>
+                      <strong class="d-block reduce_size">Wesley Roborts</strong>
+                      <span class="text-muted text_color reduce_size">Enterpreneur</span>
+                  </div>
+              </div>
+              <i class="fas fa-quote-right fs-2 double"></i>
+          </div>
+      </div>
+  </div>
+    </div>
+  </div>
+</div>
+<!-- start international company -->
+<div class="container-fluid international_company">
+  <div class="row text-center">
+    <div class="col-12 mt-5 trusted_comapany">
+      <h1 class="font-weight-bold text-dark custom-heading">Trusted by International Company</h1>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col-12">
+      <p class="font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class=" container-fluid logo-slider-container">
+  <div class="logo-slider-desktop">
+    <!-- Upper Row (6 Logos) -->
+    <div class="logo-row mt-5">
+      <img src="images/asset/company1.jpg"class="image-fluid" alt="Logo 1">
+      <img src="images/asset/company2.jpg"class="image-fluid" alt="Logo 2">
+      <img src="images/asset/company3.jpg"class="image-fluid" alt="Logo 3">
+      <img src="images/asset/company4.jpg"class="image-fluid" alt="Logo 4">
+      <img src="images/asset/company5.jpg"class="image-fluid" alt="Logo 5">
+      <img src="images/asset/company6.jpg"class="image-fluid" alt="Logo 6">
+    </div>
+    <!-- Lower Row (6 Logos) -->
+    <div class="logo-row mt-5">
+      <img src="images/asset/company8.jpg" class="image-fluid">
+      <img src="images/asset/company9.jpg" class="image-fluid">
+      <img src="images/asset/company10.jpg" class="image-fluid">
+      <img src="images/asset/company11.jpg" class="image-fluid">
+      <img src="images/asset/company14.jpg" class="image-fluid">
+      <img src="images/asset/company13.jpg" class="image-fluid">
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- start build your career  -->
+<div class="hero-section">
+    <div class="hero-content">
+      <h1>Let's Start Build Your <br> Brand With Us.</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+      <a href="#" class="btn">Discover More</a>
+    </div>
+  </div>
+ <!-- end lets build your career  -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <h2 class="logo">Padestal</h2>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+ 
+    
+        <div class="footer-center move_rights_side_center">
+            <h2>Newsletter</h2>
+            <p>Sign up our newsletter to get free update</p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Enter your email">
+                <button>Sign Up</button>
+            </div>
+        </div>
+        <div class="footer-right">
+            <ul class="footer-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright © 2021 Fonnia, All rights reserved. Powered by MoxCreative.</p>
+        <img src="images/asset/footer_image.png" alt="Payment Methods" class="img-fluid d-block mx-auto">
+
+    </div>
+</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+  <script src="images/asset/js/custom.js"></script>
+</body>
+</html>
+
+
+
+   
+
+
+
+
+
