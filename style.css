@@ -50,65 +50,6 @@ body {
     position: relative;
     right: 45px; /* Default for full screen */
 }
-@media (max-width: 980px) {
-  .hidden_icons {
-    display: none !important;
-  }
-}
-
-.icons{
-    color: white;
-    font-size:14px;
-}
-.icon:hover {
-    color: black;
-    transform: scale(1.2) !important; /* Icon ko thoda bada karega */
-    transition: transform 0.3s ease !important; /* Smooth transition effect */
-}
-
-/* Full screen (1200px+) → Icons को 45px left shift करें */
-@media (min-width: 1200px) {  
-    .icon {
-        position: relative;
-        right: 45px;
-    }
-}
-
-/* Small screens (1199px और नीचे) → Position completely reset */
-@media (max-width: 1199px) {
-    .icon {
-        position: static;
-    }
-}
-
-
-/* for header part media query */
-@media (max-width: 100px) {
-  .reducewidth {
-      position: relative;
-      left: -5vh !important;
-      width: 10px !important;
-  }
-  .reducewidth{
-      position: relative;
-      left: -5vh !important;
-      width: 10px !important;
-  }
-  .reducewidthbutton{
-      position: relative;
-      left: -20vh !important;
-      /* width: 10px !important; */
-  }
-  .reducewidthimage{
-      position: relative;
-      left: -20vh !important;
-  }
-}
-
-
-
-/*  */
-
 /* navbar contacts functionality or services and etc */
 .nav-item {
     font-weight: 600;
@@ -167,17 +108,7 @@ body {
     background-color: black !important;
   }
   
-  /* Responsive Design */
-  @media (max-width: 992px) {
-    .search-container {
-      margin-right: 0; /* Mobile में default position */
-      width: 100%;
-      justify-content: center;
-    }
-    .search-input {
-      width: 80% !important;
-    }
-  }
+ 
   
   /* Dropdown Arrow Direction */
   .nav-item.dropdown .nav-link::after {
@@ -246,22 +177,7 @@ body {
   background-color: #1D2420;
 }
 
-/* define the header line by line for small devices using media query */
-@media (max-width: 968px) {
-  .text-section {
-      text-align: left; /* Left align content on small devices */
-  }
-  .reducewidthimage {
-      display: block;
-      margin-left: 0;
-      margin-right: 0;
-  }
-  .discover_button {
-      display: inline-block;
-      margin-left: 0;
-  }
-}
-/* end */
+
 
 /* Image Section */
 .image-section {
@@ -276,7 +192,6 @@ body {
   height: auto;
 }
 
-/* ✅ Responsive Design */
 
 /* Medium Devices (Tablets, max 1024px) */
 @media (max-width: 1024px) {
@@ -299,97 +214,8 @@ body {
   }
 }   
 
-/* Extra Small Devices (max 576px) */
 
-/* ✅ Responsive Design Fix */
 
-/* Small Devices (Mobiles, max 768px) */
-/* Small Devices (Mobiles, max 768px) */
-@media (max-width: 768px) {
-  .container {
-      flex-direction: column;
-      text-align: center;
-      margin-top: 40px; /* ✅ Top margin added */
-  }
-
-  .image-section {
-      order: -1; /* ✅ Image pehle ayegi */
-  }
-
-  .text-section,
-  .image-section {
-      width: 100%;
-  }
-
-  .text-section h1 {
-      font-size: 2.2rem;
-      margin-top: 40px;
-  }
-
-  .text-section p {
-      font-size: 1.1rem;
-      color: #000;
-      font-weight: 500;
-  }
-
-  .discover_button {
-      display: inline-block;
-      padding: 12px 30px;
-      font-size: 1rem;
-      vertical-align: middle; /* ✅ Button & text ek level pe */
-  }
-
-  /* ✅ Text & Button ko ek line me laane ke liye */
-  .text-button-wrapper {
-      display: flex;
-      align-items: center; /* ✅ Align text and button */
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px; /* ✅ Space between text & button */
-  }
-
-  .image-section img {
-      max-width: 300px;
-  }
-}
-
-@media (max-width: 300px) {
-  .container {
-      flex-direction: column;  /* ✅ Sab kuch ek column me aayega */
-      align-items: center;
-      text-align: center;
-  }
-
-  .text-section {
-      font-size: 5px !important;
-      text-align: center;
-      width: 100%;  /* ✅ Pura width le */
-  }
-
-  .text-section p {
-      font-size:0.40rem !important;
-      text-align: center;
-  }
-
-  .image-section img {
-      width: 50px !important;
-      display: block;
-      margin: 0 auto;  /* ✅ Center me aayega */
-  }
-
-  .text-button-wrapper {
-      flex-direction: column;  /* ✅ Text aur button ek ke neeche ek aayenge */
-      gap: 5px;
-  }
-
-  .discover_button {
-      font-size: 6px !important;
-      padding: 5px 10px !important;
-  }
-}
-/* end hone */
-
-/* cart css start here */
 .card {
   background-color: #FFFFFF !important;
   border-radius:2px !important;
@@ -436,20 +262,6 @@ color:#555 !important;
   line-height: 1.6;
 }
 
-@media (max-width: 992px) {
-.studio-section h1 {
-font-size: 2.4rem !important; /* Reduce font size */
-}
-}
-
-/* Small Devices (Mobiles) */
-@media (max-width: 576px) {
-.studio-section h1 {
-font-size: 33px !important; /* Smaller font for small screens */
-word-break: break-word; /* Ensure long words break properly */
-text-align: center; /* Center text for better visibility */
-}
-}
 .paragraph-content  p{
 color: black !important;
 word-wrap: break-word; 
@@ -485,24 +297,7 @@ text-align: justify;
   height: auto; 
 }
 
-/* Make sure the cards don't overflow */
-@media (max-width: 768px) {
-  .testimonial .row {
-    justify-content: center; /* Center align the cards */
-  }
 
-  .testimonial .col-lg-4 {
-    max-width: 100%; /* Allow the card to occupy full width on smaller screens */
-  }
-
-  .testimonial .col-md-6 {
-    max-width: 100%;
-  }
-
-  .testimonial .col-sm-12 {
-    max-width: 100%;
-  }
-}
 
 
 .text-color{
@@ -527,11 +322,7 @@ text-align: justify;
 }
 
 
-     @media (max-width: 767px) {
-        .text-start {
-            text-align: left !important; /* Ensures the text remains left-aligned */
-        }
-    }
+   
     .double{
       font-size:3.8rem !important;
       color:#dadee2 !important;
@@ -560,16 +351,7 @@ text-align: justify;
 
 /* card styling end */
 
-/* reduce the size of image and text of cart */
-@media(max-width:100px)
-{
- .reduce_size{
-    font-size: 4px !important;
-   position: relative;
-   left: -2vh !important;
- }
-}
-/* end */
+
 
 /* logo top of companies */
 .custom-heading {
@@ -605,55 +387,3 @@ width: 150px;
 height: 150px;
 object-fit: contain;
 }
-
-/* ✅ Small Devices ke liye Responsive Infinite Scroll */
-@media (max-width: 768px) {
-.logo-slider-desktop {
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.logo-row {
-  display: flex;
-  align-items: center;
-  gap: 40px; /* Increased gap for better spacing on small devices */
-  flex-wrap: nowrap;
-  overflow: hidden;
-  padding: 10px;
-  width: 100%; /* Ensure it stays inside */
-}
-
-.logo-row img {
-  width: 100px;
-  height: 100px;
-}
-
-/* ✅ Duplicate logos for smooth infinite effect */
-.logo-row::after {
-  content: "";
-  display: flex;
-  width: 100%; /* Ensures full width */
-}
-
-/* ✅ Upper Row Animation (Left to Right) */
-.logo-row:first-child {
-  animation: moveLeft 20s linear infinite;
-}
-
-/* ✅ Lower Row Animation (Right to Left) */
-.logo-row:last-child {
-  animation: moveRight 20s linear infinite;
-}
-
-/* ✅ Keyframes for Smooth Infinite Scrolling */
-@keyframes moveLeft {
-  0% { transform: translateX(100%); } /* Start from right side */
-  100% { transform: translateX(-90%); } /* Move to left */
-}
-
-@keyframes moveRight {
-  0% { transform: translateX(-100%); } /* Start from left side */
-  100% { transform: translateX(70%); } /* Move to right */
-}
-}  
-/* end logoes on top of company */

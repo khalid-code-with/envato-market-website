@@ -13,9 +13,9 @@ function scrollToTop() {
 }
 
     // this show the navbar always on top dont need to refresh
-    // document.addEventListener("click", function () {
-    //   document.getElementById("navbarSupportedContent").classList.add("show");
-    // });
+    document.addEventListener("click", function () {
+      document.getElementById("navbarSupportedContent").classList.add("show");
+    });
 
    
       
