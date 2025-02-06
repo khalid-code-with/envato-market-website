@@ -49,8 +49,7 @@
         </div>
     </div>
 </div>
- <!-- end discound -->
-    
+ <!-- end discound -->  
  <!-- navbar options show show -->
  <nav class="navbar navbar-expand-lg bg-white py-3 menu_bar" id="navbarSupportedContent">
     <div class="container-fluid">
@@ -66,12 +65,12 @@
       <!-- Navbar Links -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto gap-3"> 
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"aria-expanded="false">
               Shops
             </a>  
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"data-bs-auto-close="false">
               <li><a class="dropdown-item" href="#">Single product</a></li>
             </ul>
           </li>
@@ -82,7 +81,7 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarPages" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Pages
             </a>  
-            <ul class="dropdown-menu" aria-labelledby="navbarPages">
+            <ul class="dropdown-menu" aria-labelledby="navbarPages"data-bs-auto-close="true">
               <li><a class="dropdown-item" href="#">Login page</a></li>
               <li><a class="dropdown-item" href="#">Team</a></li>
               <li><a class="dropdown-item" href="#">Blog</a></li>
@@ -92,7 +91,6 @@
             </ul>
           </li>
         </ul>
-  
         <!-- Search & Icons Section -->
         <form class="d-flex align-items-center search-container">
           <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search">
@@ -159,8 +157,7 @@
   </div>
 
  <!-- end card part -->
-      <style>
-      </style>
+    
  <div class="container studio-section">
     <div class="row align-items-center">
         <!-- Left Side -->
@@ -183,7 +180,7 @@
   <h2>Latest Product</h2>
   <!-- Flexbox wrapper to align the button to the right -->
   <div class="d-flex justify-content-end">
-      <button type="button" class="btn btn-danger changebutton_topbutton" onclick="scrollToTop()">View More</button>
+      <button type="button" class="btn btn-danger changebutton_topbutton"id="move_center" onclick="scrollToTop()">View More</button>
   </div>
 </div>
 <div class="container">
@@ -272,12 +269,6 @@
   </div>
 </div>
  <!-- end vshalid cart -->
-<style>
-    .no-hover{
-  pointer-events: none !important;
-}
-
-</style>
 <!-- why choose us cart start here -->
  <div class="downtobotton">
 <div class="container-fluid py-5 why-choose-container">
@@ -294,39 +285,39 @@
             <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
             <!-- Cards Section -->
                 <div class="col-6">
-                    <div class="card-custom text-center">
+                    <div class="card-custom">
                         <div class="icon no-hover">
                            
-                             <img src="images/asset/creative.png"class="align-start image-fluid" alt="" srcset="" width="45px">
+                             <img src="images/asset/creative.png"class="align-start image-fluid leftsidemoving" alt="" srcset="" width="45px">
                         </div>
-                        <h5 class="mt-3 text-start">Creative</h5>
-                        <p class="text-wrap w-100 text-width">Bibendum ad gravida hac auctor et risus eleifend viverra neque nunc ac.</p>                    </div>
+                        <h5 class="mt-2 text-start">Creative</h5>
+                        <p class="text-wrap w-100 text-width move-leftside">Bibendum ad gravida hac auctor et risus eleifend viverra neque nunc ac.</p>                    </div>
                 </div>
                 <div class="col-md-6 mb-3">
-                    <div class="card-custom text-center">
+                    <div class="card-custom">
                         <div class="icon no-hover">
-                            <img src="images/asset/diamond-icons.png"class="align-start image-fluid" alt="" srcset="" width="35px">
+                            <img src="images/asset/diamond-icons.png"class="align-start image-fluid leftsidemovingdiamend" alt="" srcset="" width="35px">
                         </div>
-                        <h5 class="mt-3 text-start">Prestigious</h5>
-                        <p>Bibendum ad gravida hac auctor et risus eleifend viverra neque nunc ac.</p>
+                        <h5 class="mt-2 text-start">Prestigious</h5>
+                        <p class="move-left">Bibendum ad gravida hac auctor et risus eleifend viverra neque nunc ac.</p>
                     </div>
                 </div>
                 <div class="col-md-6 mb-3">
-                    <div class="card-custom text-center">
+                    <div class="card-custom">
                         <div class="icon no-hover">
                             <img src="images/asset/communitive.png"class="align-start image-fluid" alt="" srcset=""width="35px">
                         </div>
-                        <h5 class="mt-3 text-start">Communicative</h5>
-                        <p>Bibendum ad gravida hac auctor et risus eleifend viverra neque nunc ac.</p>
+                        <h5 class="mt-2 text-start">Communicative</h5>
+                        <p  class="move-left">Bibendum ad gravida hac auctor et risus eleifend viverra neque nunc ac.</p>
                     </div>
                 </div>
                 <div class="col-md-6 mb-3">
-                    <div class="card-custom text-center">
+                    <div class="card-custom">
                         <div class="icon no-hover">
                             <img src="images/asset/support_icon.png"  class="align-start image-fluid" alt="" srcset="" width="35px">
                         </div>
-                        <h5 class="mt-3 text-start">Support</h5>
-                        <p>Bibendum ad gravida hac auctor et risus eleifend viverra neque nunc ac.</p>
+                        <h5 class="mt-2 text-start">Support</h5>
+                        <p class="move-left">Bibendum ad gravida hac auctor et risus eleifend viverra neque nunc ac.</p>
                     </div>
                 </div>
             </div>
@@ -334,8 +325,6 @@
     </div>
 </div>
 </div>
-<style>
-</style>
   <!-- testimonial website -->
     <!-- Testimonial Section -->
     <div class="container-fluid testimonial">
@@ -355,12 +344,8 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
             </div>
-          
             <p class="text-start fs-5 paragraph">Ad efficitur imperdiet curabitur dis ex egestas interdum sagittis et. Accumsan tempus sed lobortis sit molestie rutrum montes justo. Sed magnis non proin primis commodo enim efficitur. Malesuada fusce elementum est luctus litora ipsum.</p>
-    
-           
             <div class="d-flex justify-content-between align-items-end">
-              
                 <div class="d-flex align-items-center">
                     <img src="images/asset/person1.jpg" class="rounded-circle me-3 img-fluid reduce_size" width="60" height="60" alt="User Image">
                     <div>
@@ -368,13 +353,11 @@
                         <span class="text-muted text_color reduce_size">Business Owner</span>
                     </div>
                 </div>
-               
-                <i class="fas fa-quote-right fs-2 double"></i>
+                <i class="fa-solid fa-quote-left fs-2 double"></i>
             </div>
         </div>
     </div>
   
-    
      <div class="col-lg-4 col-md-6 col-sm-12 mb-4 ">
       <div class="card p-4 shadow-lg">
       
@@ -385,8 +368,6 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
           </div>
-  
-        
           <p class="text-start fs-5 paragraph">Ad efficitur imperdiet curabitur dis ex egestas interdum sagittis et. Accumsan tempus sed lobortis sit molestie rutrum montes justo. Sed magnis non proin primis commodo enim efficitur. Malesuada fusce elementum est luctus litora ipsum.</p>
   
         
@@ -399,7 +380,8 @@
                       <span class="text-muted text_color reduce_size">Manager Lokamart</span>
                   </div>
               </div>
-              <i class="fas fa-quote-right fs-2 double"></i>
+              <!-- <i class="fas fa-quote-right fs-2 double"></i> -->
+              <i class="fa-solid fa-quote-left fs-2 double"></i>
           </div>
       </div>
   </div>
@@ -424,7 +406,8 @@
                       <span class="text-muted text_color reduce_size">Enterpreneur</span>
                   </div>
               </div>
-              <i class="fas fa-quote-right fs-2 double"></i>
+              <!-- <i class="fas fa-quote-right fs-2 double"></i> -->
+              <i class="fa-solid fa-quote-left fs-2 double"></i>
           </div>
       </div>
   </div>
@@ -512,7 +495,7 @@
 
     </div>
 </footer>
-
+</style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
   <script src="images/asset/js/custom.js"></script>

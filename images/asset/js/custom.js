@@ -11,3 +11,11 @@ window.addEventListener("scroll", function () {
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+    // this show the navbar always on top dont need to refresh
+    // document.addEventListener("click", function () {
+    //   document.getElementById("navbarSupportedContent").classList.add("show");
+    // });
+
+   
+      

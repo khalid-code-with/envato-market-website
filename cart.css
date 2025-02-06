@@ -25,7 +25,14 @@
     }
 }
 
-
+/* add the space on top for small device */
+@media (max-width: 900px) {
+    #move_center{
+        position: relative !important;
+        top: 10px !important;
+    }
+}
+/* end */
 .product-content {
     font-size: 2rem;
     color: #555;
@@ -69,7 +76,7 @@ background-color: #000 !important;
 .card-body p {
     font-size: 18px;
     color: #E65127;
-    text-align: center; /* Centering price */
+    /* text-align: center; */
     margin-top: 5px;
     margin-bottom: 2px;
 
@@ -163,12 +170,33 @@ background-color: #000 !important;
   @media(max-width:900px)
   {
       .text-width{
-          width: 300px !important;
+        width: 270px !important;
       }
   }
 
-
-
+/* move the text in a center in a proper alignment and center */
+.leftsidemoving{
+    margin-left: -10px !important;
+}
+.leftsidemovingdiamend{
+    margin-left: -5px !important;
+}
+@media(max-width:968px)
+{
+    .card-custom .move-left{
+    width: 280px;
+    color: #FFFFFF;
+    font-weight: 450;
+    }
+    .move-leftside{
+       color: #FFFFFF;
+    }
+}
+.align-start{
+    text-align: left !important;
+     font-weight: 450;
+}
+/* end */
 
 
 
@@ -420,6 +448,10 @@ background-color: #000 !important;
     }
 }
 
+/* this is remove the bydefault hover on icons */
+   .no-hover{
+  pointer-events: none !important;
+} 
   
   /* Responsive Design */
   @media (max-width: 1024px) {
@@ -521,16 +553,21 @@ background-color: #000 !important;
 
     .hero-content h1 {
         font-size: 2.5rem; /* Adjust heading size */
+        margin-left: -20px !important;
     }
 
     .hero-content p {
-        font-size: 1rem;
-        line-height: 1.5;
+        line-height: 1.4rem;
+        margin-left: -20px;
+        width: 300px;
     }
 
     .hero-content .btn {
         padding: 10px 20px;
         font-size: 0.9rem;
+        margin-left: -10px !important;
+        position: relative;
+        top: 7px !important;
     }
 }
 @media(max-width: 540px)
