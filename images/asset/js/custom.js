@@ -17,6 +17,14 @@ function scrollToTop() {
       document.getElementById("navbarSupportedContent").classList.add("show");
     });
 
+// animation with window scrolling
+    document.addEventListener("DOMContentLoaded", function () {
+        AOS.init({
+            duration: 1000, // Animation speed (1s)
+            once: true,  // Animation sirf ek baar chale (refresh ya first load pe)
+            easing: "ease-out"
+        });
+    });
     
    
       

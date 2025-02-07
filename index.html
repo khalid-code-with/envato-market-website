@@ -6,11 +6,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/elementkit-icons/css/elementkit-icons.min.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ <!-- for animation -->
     <title>Responsive Navbar</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="cart.css">
-    <link rel="stylesheet" href="images/asset/js/responsive.css">
+    <link rel="stylesheet" href="images/asset/js/responsive.css">  <!-- ios library import -->
     <link rel="stylesheet" href="animation.css">
 </head>
 <!-- Responsive Navbar -->
@@ -106,12 +107,12 @@
   <!-- home part our website -->
   <div class="container">
     <div class="text-section">
-        <h1 class="reducewidth">Type is what meaning looks like.</h1>
-        <p class="reducewidth">Id posuere feugiat adipiscing euismod elit est quam montes accumsan</p>
-        <a href="#" class="discover_button reducewidthbutton">Discover More</a>
+        <h1 class="reducewidth" data-aos="fade-right">Type is what meaning looks like.</h1>
+        <p class="reducewidth"data-aos="fade-right">Id posuere feugiat adipiscing euismod elit est quam montes accumsan</p>
+        <a href="#" class="discover_button reducewidthbutton"data-aos="fade-right">Discover More</a>
     </div>
     <div class="image-section">
-        <img src="images/asset/text-image.jpg"class="img-fluid d-block mx-auto reducewidthimage" alt="Font Logo">
+        <img src="images/asset/text-image.jpg"class="img-fluid d-block mx-auto reducewidthimage"data-aos="fade-down" alt="Font Logo">
     </div>
 </div>
  <!-- cart part start here -->
@@ -120,7 +121,7 @@
         <div class="col">
         <div class="container moveontop">
             <div class="row g-4">
-                <div class="col-md-3">
+                <div class="col-md-3"data-aos="fade-down" data-aos-delay="200">
                     <div class="card text-center p-4">
                         <img src="images/asset/js/photo.png" alt="" class="img-fluid mx-auto d-block" width="45px">
                         <h5 class="card-title mt-3 mb-3">Type Designer</h5>
@@ -128,8 +129,7 @@
                     </div>
                 </div>
                 
-        
-                <div class="col-md-3">
+                <div class="col-md-3"data-aos="fade-down" data-aos-delay="400">
                     <div class="card text-center p-4">
                   <img src="images/asset/js/photo.png" alt="" class="img-fluid mx-auto d-block" width="45px">
                         <h5 class="card-title mt-3 mb-3">Logo Designer</h5>
@@ -137,14 +137,14 @@
                     </div>
                 </div>
         
-                <div class="col-md-3">
+                <div class="col-md-3"data-aos="fade-down" data-aos-delay="600">
                   <div class="card text-center p-4">
                 <img src="images/asset/js/photo.png" alt="" class="img-fluid mx-auto d-block" width="45px">
                       <h5 class="card-title mt-3 mb-3">Illustrute</h5>
                       <p class="card-text">Bibendum ad gravida hac auctor et risus eleifend viverra neque nunc ac.</p>
                   </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-3" data-aos="fade-down" data-aos-delay="800">
                 <div class="card text-center p-4">
               <img src="images/asset/js/photo.png" alt="" class="img-fluid mx-auto d-block" width="45px">
                     <h5 class="card-title mt-3 mb-3">brand kit</h5>
@@ -156,7 +156,6 @@
         </div>
     </div>
   </div>
-
   <style>
   
 
@@ -167,14 +166,15 @@
     <div class="row align-items-center">
         <!-- Left Side -->
         <div class="col-12 col-md-6">
-            <h3>About Our Studio</h3>
-            <h1>Type design is about function. Drawing<br> pretty shapes isn't enough.</h1>
+            <h3 data-aos="fade-right">About Our Studio</h3>
+            <h1 data-aos="fade-right">Type design is about function. Drawing<br> pretty shapes isn't enough.</h1>
+         
         </div>
         <!-- Right Side -->
         <div class="col-12 col-md-6 paragraph-content ">
             <div class="container">
-            <p>Penatibus maximus suscipit class pellentesque platea. Convallis letius vel curabitur ridiculus ante. Montes congue tellus placerat. Habitant vulputate lacinia cursus elit finibus. Sodales ultrices quis risus elementum. Purus suscipit dapibus taciti volutpat tristique. Donec elit justo dapibus. Per mollis tortor leo maximus sem.</p>
-            <p>Mus vivamus tristique commodo. Pretium nulla rhoncus adipiscing fringilla maximus. Maximus sed auctor integer dapibus fringilla quisque dictumst. Platea senectus aliquam eget. Rhoncus vestibulum magna dui hendrerit venenatis lectus ridiculus. Vel magna tempor imperdiet. Leo pede ipsum erat sollicitudin commodo cursus amet. Parturient imperdiet nunc gravida per neque in.</p>
+            <p data-aos="fade-left">Penatibus maximus suscipit class pellentesque platea. Convallis letius vel curabitur ridiculus ante. Montes congue tellus placerat. Habitant vulputate lacinia cursus elit finibus. Sodales ultrices quis risus elementum. Purus suscipit dapibus taciti volutpat tristique. Donec elit justo dapibus. Per mollis tortor leo maximus sem.</p>
+            <p data-aos="fade-left">Mus vivamus tristique commodo. Pretium nulla rhoncus adipiscing fringilla maximus. Maximus sed auctor integer dapibus fringilla quisque dictumst. Platea senectus aliquam eget. Rhoncus vestibulum magna dui hendrerit venenatis lectus ridiculus. Vel magna tempor imperdiet. Leo pede ipsum erat sollicitudin commodo cursus amet. Parturient imperdiet nunc gravida per neque in.</p>
         </div>
     </div>
     </div>
@@ -287,43 +287,44 @@
         <!-- Content Column -->
         <div class="col-lg-6 d-flex flex-column justify-content-center"id="down_top">
             <div class="why-choose">Why choose us</div>
-            <h2 class="my-2">Professional, Experienced and Affordable</h2>
-            <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <h2 class="my-2" data-aos="fade-down">Professional, Experienced and Affordable</h2>
+            <p class="para" data-aos="fade-down">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
             <!-- Cards Section -->
                 <div class="col-6">
                     <div class="card-custom">
                         <div class="icon no-hover">
                            
-                             <img src="images/asset/creative.png"class="align-start image-fluid leftsidemoving animationallytop" alt="" srcset="" width="45px">
+                             <img src="images/asset/creative.png"class="align-start image-fluid leftsidemoving animationallytop" data-aos="fade-down" alt="" srcset="" width="45px">
                         </div>
-                        <h5 class="mt-2 text-start"class="animationallytop">Creative</h5>
-                        <p class="text-wrap w-100 text-width move-leftside animationallytop ">Bibendum ad gravida hac auctor et risus eleifend viverra neque nunc ac.</p>                    </div>
+                        <h5 class="mt-2 text-start"class="animationallytop" data-aos="fade-down">Creative</h5>
+
+                        <p class="text-wrap w-100 text-width move-leftside animationallytop" data-aos="fade-down">Bibendum ad gravida hac auctor et risus eleifend viverra neque nunc ac.</p>                    </div>
                     </div>
                 <div class="col-md-6 mb-3">
                     <div class="card-custom">
                         <div class="icon no-hover">
-                            <img src="images/asset/diamond-icons.png"class="align-start image-fluid leftsidemovingdiamend animationallytop" alt="" srcset="" width="35px">
+                            <img src="images/asset/diamond-icons.png"class="align-start image-fluid leftsidemovingdiamend animationallytop" data-aos="fade-down" alt="" srcset="" width="35px">
                         </div>
-                        <h5 class="mt-2 text-start animationallytop">Prestigious</h5>
-                        <p class="move-left animationallytop">Bibendum ad gravida hac auctor et risus eleifend viverra neque nunc ac.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <div class="card-custom">
-                        <div class="icon no-hover">
-                            <img src="images/asset/communitive.png"class="align-start image-fluid animationallytop" alt="" srcset=""width="35px">
-                        </div>
-                        <h5 class="mt-2 text-start animationallytop">Communicative</h5>
-                        <p  class="move-left animationallytop">Bibendum ad gravida hac auctor et risus eleifend viverra neque nunc ac.</p>
+                        <h5 class="mt-2 text-start animationallytop" data-aos="fade-down">Prestigious</h5>
+                        <p class="move-left animationallytop" data-aos="fade-down">Bibendum ad gravida hac auctor et risus eleifend viverra neque nunc ac.</p>
                     </div>
                 </div>
                 <div class="col-md-6 mb-3">
                     <div class="card-custom">
                         <div class="icon no-hover">
-                            <img src="images/asset/support_icon.png"  class="align-start image-fluid animationallytop" alt="" srcset="" width="35px">
+                            <img src="images/asset/communitive.png"class="align-start image-fluid animationallytop" data-aos="fade-down" alt="" srcset=""width="35px">
                         </div>
-                        <h5 class="mt-2 text-start animationallytop">Support</h5>
-                        <p class="move-left animationallytop">Bibendum ad gravida hac auctor et risus eleifend viverra neque nunc ac.</p>
+                        <h5 class="mt-2 text-start animationallytop" data-aos="fade-down">Communicative</h5>
+                        <p  class="move-left animationallytop" data-aos="fade-down">Bibendum ad gravida hac auctor et risus eleifend viverra neque nunc ac.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card-custom">
+                        <div class="icon no-hover">
+                            <img src="images/asset/support_icon.png"  class="align-start image-fluid animationallytop" data-aos="fade-down" alt="" srcset="" width="35px">
+                        </div>
+                        <h5 class="mt-2 text-start animationallytop" data-aos="fade-down">Support</h5>
+                        <p class="move-left animationallytop" data-aos="fade-down">Bibendum ad gravida hac auctor et risus eleifend viverra neque nunc ac.</p>
                     </div>
                 </div>
             </div>
@@ -342,7 +343,7 @@
       </div>
   <div class="container-fluid mt-5"id="moveontopside">
     <div class="row d-flex justify-content-between">
-      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4"data-aos="fade-down" data-aos-delay="200">
         <div class="card p-4 shadow-lg">
             <div class="text-start mb-4 mt-2 start_color_changes">
                 <i class="fas fa-star"></i>
@@ -365,7 +366,7 @@
         </div>
     </div>
   
-     <div class="col-lg-4 col-md-6 col-sm-12 mb-4 ">
+     <div class="col-lg-4 col-md-6 col-sm-12 mb-4"data-aos="fade-down" data-aos-delay="400">
       <div class="card p-4 shadow-lg">
       
           <div class="text-start  mb-4 mt-2 start_color_changes">
@@ -393,7 +394,7 @@
       </div>
   </div>
   
-    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-4"data-aos="fade-down" data-aos-delay="600">
       <div class="card p-4 shadow-lg">
           <!-- Star Rating -->
           <div class="text-start  mb-4 mt-2 start_color_changes">
@@ -459,7 +460,7 @@
 
 <!-- start build your career  -->
 <div class="hero-section">
-    <div class="hero-content">
+<div class="hero-content"data-aos="fade-right">
       <h1>Let's Start Build Your <br> Brand With Us.</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
       <a href="#" class="btn">Discover More</a>
@@ -505,14 +506,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
   <script src="images/asset/js/custom.js"></script>
+
+  <!-- // ios library for animation with scroll window -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 </html>
-
-
-
-   
-
-
-
-
-
