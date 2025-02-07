@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/elementkit-icons/css/elementkit-icons.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
  <!-- for animation -->
-    <title>Responsive Navbar</title>
+    <title>Market inova website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="cart.css">
     <link rel="stylesheet" href="images/asset/js/responsive.css">  <!-- ios library import -->
@@ -179,9 +179,36 @@
     </div>
     </div>
 </div>
+<!-- video banner -->
+<div class="banner">
+    <div class="left-content">
+      <div class="play-button"data-aos="fade-up" onclick="openVideo()">
+        <span>&#9654;</span>
+      </div>
+      <p class="play-text" data-aos="fade-up">Play Intro</p>
+     
+    </div>
+  
+    <div class="right-content">
+      <h1 data-aos="fade-left">Typography is what language looks like.</h1>
+      <p data-aos="fade-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <button class="shop-btn"data-aos="fade-left">View on Shop</button>
+      <!-- <img src="images/asset/bussinessmanrotate.jpg" alt="" srcset=""> -->
+    </div>
+  </div>
+  <div id="video-popup" class="video-popup">
+    <div class="video-container">
+      <span class="close-btn" onclick="closeVideo()">&times;</span>
+      <iframe
+        id="video-frame"
+        src="https://www.youtube.com/embed/ga3zVU00KhY?autoplay=1"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+ <!-- end video banner -->
 
-  <!-- end navbar options show  -->
- <!-- veshali cart  -->
+
  <div class="container latest-products">
   <h2>Latest Product</h2>
   <!-- Flexbox wrapper to align the button to the right -->
@@ -293,8 +320,7 @@
                 <div class="col-6">
                     <div class="card-custom">
                         <div class="icon no-hover">
-                           
-                             <img src="images/asset/creative.png"class="align-start image-fluid leftsidemoving animationallytop" data-aos="fade-down" alt="" srcset="" width="45px">
+                         <img src="images/asset/creative.png"class="align-start image-fluid leftsidemoving animationallytop" data-aos="fade-down" alt="" srcset="" width="45px">
                         </div>
                         <h5 class="mt-2 text-start"class="animationallytop" data-aos="fade-down">Creative</h5>
 
@@ -457,7 +483,6 @@
 </div>
 </div>
 </div>
-
 <!-- start build your career  -->
 <div class="hero-section">
 <div class="hero-content">
@@ -502,6 +527,8 @@
         <img src="images/asset/footer_image.png" alt="Payment Methods" class="img-fluid d-block mx-auto">
     </div>
 </footer>
+<script>
+</script>
 </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>

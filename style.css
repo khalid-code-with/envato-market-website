@@ -31,6 +31,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 
@@ -387,3 +388,399 @@ width: 150px;
 height: 150px;
 object-fit: contain;
 }
+
+/* remove the hover by default why chhose us part mai in images */
+.icon.no-hover img {
+  pointer-events: none !important; 
+   }
+
+/* video add open iframe */
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+  background: url("images/asset/businessman-updated.jpg") no-repeat
+    center/cover;
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.4); /* Light transparent white */
+  /* filter: opacity(0.7) !important;  */
+}
+
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#videoContainer {
+  width: 50%;
+  height: 50vh;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  background: black;
+  display: none;
+}
+video {
+  width: 100%;
+  height: 100%;
+}
+
+.play-button {
+  background: #e65127;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+/* start */
+.play-button:hover{
+border: 1px solid #FFF;
+background-color: #f55d5d;
+}
+/* end */
+
+.video-container {
+  position: relative;
+  max-width: 90%;
+  width: 60vw;
+  height: auto;
+  margin: 0 auto;
+  background: black;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.video-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+  padding: 0 30vh; 
+}
+
+/* iframe open for small devices */
+@media screen and (max-width: 768px) {
+.video-container {
+  width: 90vw !important; /* Chhoti screens par zyada width */
+  padding: 10px !important; /* Kam padding takay zyada space na le */
+}
+
+.video-popup {
+  padding: 0 10vw; /* Mobile screens ke liye better centering */
+}
+
+iframe {
+  width: 100%;
+  height: 50vh; /* Chhoti screen par height adjust */
+}
+}
+
+@media screen and (max-width: 480px) {
+.video-container {
+  width: 95vw !important;
+  padding: 5px !important;
+}
+
+.video-popup {
+  padding: 0 5vw;
+}
+
+iframe {
+  width: 100% !important;
+  height: 40vh !important; /* Aur chhoti screens par height aur kam */
+}
+}
+
+/* end iframe open for small devices */
+
+.close-btn {
+  position: absolute;
+  top: -20px;
+  right: -19px !important;
+  font-size: 30px;
+  color: white;
+  background: red;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+@media(max-width:900px)
+{
+  .play-text{
+position: relative;
+left: -17vh !important;
+  }
+}
+
+.play-text{
+  color: #FFFFFF !important;
+  font-weight: 700 !important;
+
+}
+@media (max-width: 768px) {
+  .video-popup {
+    padding: 0 5vw; /* ✅ Small devices ke liye */
+  }
+
+  .video-container {
+    width: 90vw;
+  }
+}
+
+.play-button:hover {
+  transform: scale(1.1);
+}
+
+.play-button span {
+  font-size: 26px;
+  color: white;
+}
+
+.play-text {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.right-content {
+  text-align: center;
+  max-width: 90%;
+  margin-left: 30px; /* ✅ 30px right shift */
+}
+
+.right-content h1 {
+  font-size: 3.7rem !important;
+  margin-bottom: 11px;
+  color: #000;
+  margin-left:10px;
+}
+
+.right-content p {
+  font-size: 2.8rem !important;
+  line-height: 1.1;
+  margin-bottom: 25px;
+  margin-left:10px;
+  color: rgba(0, 0, 0, 0.95) !important;
+  font-weight: 500;
+ 
+}
+
+.shop-btn {
+  border: none;
+  padding: 18px 32px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #ffffff;
+  background-color: #e65127;
+  border-radius: 2px;
+  margin-left:10px;
+  outline: none !important;
+  border: none !important;
+}
+
+
+.shop-btn:hover {
+  background:rgb(0, 0, 0) !important;
+  font-weight: 500;
+}
+
+.video-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+}
+.close-btn {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+.close-btn:hover{
+  background-color: black !important;
+  border: 1px solid white;
+}
+
+/* ✅ Fully Responsive Design */
+@media (min-width: 768px) {
+  .banner {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding: 50px;
+  }
+
+  .left-content {
+    width: 30%;
+  }
+
+  .right-content {
+    width: 60%;
+    text-align: left;
+  }
+
+  .right-content h1 {
+    font-size: 3rem;
+  }
+
+  .right-content p {
+    font-size: 1.5rem !important;
+  }
+}
+
+ @media(max-width:900px)
+ {
+   .right-content h1{
+    color: #000;
+    font-weight: 700 !important;
+    margin-left: 45px !important;
+    font-size: 1.5rem !important;
+
+
+  }
+  .right-content p{
+    color: black;
+      margin-left: 45px !important;
+      font-weight: 600 !important;
+      color: #000 !important;
+      font-size: 1.2rem !important;
+  }
+ 
+  .shop-btn{
+      margin-left: 45px !important;
+    padding: 2px 32px;
+  }
+  .close-btn{
+    margin-top: 27vh;
+    right: -0.50vh !important;
+  }
+  .play-text{
+    margin-left: 20px;
+    margin-left: 34vh !important;
+    color: #000 !important;
+  
+  }
+  span{
+    /* margin-left: 20px; */
+  }
+ }
+
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .right-content {
+    width: 100%;
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .right-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .right-content p {
+    font-size: 1.3rem;
+    font-weight: 700 !important;
+
+  }
+}
+
+@media (max-width: 480px) {
+  .right-content h1 {
+    font-size: 2rem;
+  }
+
+  .right-content p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    max-width: 90%;
+  }
+
+  .shop-btn {
+    padding: 12px 28px;
+    font-size: 16px;
+  }
+
+  .video-container {
+    width: 95%;
+  }
+}
+.video-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.video-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 35px;
+  color: white;
+  background: red;
+  border-radius: 50%;
+  padding-bottom: 1.10vh !important;
+  font-weight: 700 !important;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10000;
+}
+/* end video iframe */

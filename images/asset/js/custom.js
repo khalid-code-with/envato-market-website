@@ -8,6 +8,8 @@ window.addEventListener("scroll", function () {
         nav.classList.remove("sticky");
     }
 });
+
+// move button on top scrolling
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
@@ -25,6 +27,13 @@ function scrollToTop() {
             easing: "ease-out"
         });
     });
-    
-   
+
+
+//   close vidwo on cros open video 
+    function openVideo() {
+        document.getElementById("video-popup").style.display = "flex";
+      }
+      function closeVideo() {
+        document.getElementById("video-popup").style.display = "none";
+      }
       
