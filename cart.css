@@ -371,3 +371,151 @@ background-color: #000 !important;
     width: 200px;
     margin-top: 10px;
 }
+
+/* add to cart css start here */
+.card {
+    border-radius: 12px; /* Card ke corners smooth */
+    overflow: hidden; 
+    text-align: center;
+    border-radius: 6px !important;
+   
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card .price {
+    margin-bottom: 5px; /* Price aur image ka gap kam */
+}
+
+.add-to-cart-btn {
+    width: 100%; /* Full width */
+    background-color: orange; /* Default color */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.add-to-cart-btn:hover {
+    background-color: black; /* Hover per black */
+}
+.add-to-cart-card{
+    border-radius: 12vh !important; /* Industry-standard rounded corners */
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 40px;
+    padding: 25px;
+    border-radius: 17px !important;
+    box-sizing: border-box;
+    position: relative !important; 
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+    
+}
+/* Hover Effect */
+.add-to-cart-card:hover {
+    transform: translateY(0.10px) !important;  
+     box-shadow: 0 4px 9px rgba(0, 0, 0, 0.3) !important; 
+}
+
+.add-to-cart-card .stroke {
+    text-decoration: line-through;
+    color: #5C707E;
+    font-size: 15px;
+    padding: 10px !important;
+  
+}
+
+.add-to-cart-card .btn-primary {
+    width: 100%; 
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-weight: 500;
+    gap: 8px;
+    font-size: 16px;
+    padding: 11px 15px;
+    outline: none !important;
+    border: none !important;
+    /* background-color: #0555fa !important; */
+    background-color: #00BBAE !important;
+}
+.add-to-cart-card .btn-primary:hover{
+    background-color: black !important;
+}
+.add-to-cart-card .card-body {
+    text-align: center;
+    padding: 15px;
+}
+
+.add-to-cart-card .card-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.add-to-cart-card .card-text {
+    font-size: 16px;
+    font-weight: bold; 
+    color: #00BBAE !important;
+    position: relative;
+    top: -0.80vh !important;
+}
+
+.add-to-cart-card img.card-img-top {
+    border-radius: 10px;
+}
+
+/* Fixing Star Image Spacing */
+.add-to-cart-card img[alt="Stars"] {
+    margin-top: 10px;  
+}
+
+.imge_top{
+    position: relative;
+    top:-0.60vh !important;
+}
+@media (max-width: 900px) { 
+    .add-to-cart-card {
+        margin-top: -2.20rem !important; 
+    }
+}
+
+.sticky-heading {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 30px; 
+}
+@media(max-width:968px)
+{
+    .sticky-heading{
+        position: relative;
+        top: -4vh !important;
+        color: black;
+    }
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.reduce_gap_three_onfullscreen{
+    position: relative;
+    top: -5vh;
+}
+@media (max-width: 900px) {
+    .reduce_gap_three_onfullscreen {
+        position: static;
+        top: auto; 
+    }
+}
+
+/* end add to cart css */

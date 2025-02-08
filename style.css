@@ -330,8 +330,9 @@ text-align: justify;
 /* For the paragraph */
 .paragraph {
   color: #555555e5;
-  white-space: pre-line; /* Ensures line breaks are respected */
-  text-align: left; /* Align the paragraph text to the left */
+  white-space: pre-line; 
+
+  text-align: left; 
 }
 
 /* For the quotes icon styling */
@@ -581,22 +582,19 @@ left: -17vh !important;
 
 .shop-btn {
   border: none;
-  padding: 18px 32px;
+  padding: 16px 35px;
   font-size: 18px;
   cursor: pointer;
   transition: 0.3s;
   color: #ffffff;
   background-color: #e65127;
-  border-radius: 2px;
+  border-radius: 5px !important;
   margin-left:10px;
   outline: none !important;
   border: none !important;
 }
-
-
 .shop-btn:hover {
   background:rgb(0, 0, 0) !important;
-  font-weight: 500;
 }
 
 .video-popup {
@@ -780,6 +778,9 @@ iframe {
 /* end video iframe */
 
 /* card hover on Testimonial */
+
+/* add */
+
 .card {
   position: relative !important; 
   transition: box-shadow 0.7s ease-in-out !important; 
