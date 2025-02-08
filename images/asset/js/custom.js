@@ -37,3 +37,7 @@ function scrollToTop() {
         document.getElementById("video-popup").style.display = "none";
       }
       
+// it remove bydefault behaviour of our website 
+document.body.addEventListener("click", function(event) {
+    event.preventDefault();
+});

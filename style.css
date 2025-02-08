@@ -3,25 +3,22 @@
     background-color: #82B440 !important;
     border-color: #82B440 !important;
     color: #FFFFFF !important;
-    pointer-events: auto; /* यह ensure करेगा कि बटन clickable रहे */
+    pointer-events: auto;
 }
 .btn:hover {
     background-color: #82B440 !important;
     border-color: #82B440 !important;
     color: #FFFFFF !important;
 }
-.navbar{
-    
-}
 
 /* navbar sticky on top */
 #navbar_sticky {
-    position: fixed;  /* Fixed position ताकि हमेशा टॉप पर रहे */
+    position: fixed;  
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1050; /* Navbar हमेशा सबसे ऊपर रहेगा */
-    background-color: black; /* Background fix रहेगा */
+    z-index: 1050; 
+    background-color: black; 
     padding: 10px 20px; /* Proper spacing */
 }
 
@@ -31,12 +28,9 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    /* transform: translate(0, 0) !important;/ */
 }
 
-
-/* end navbar */
-/* dicscount */
 #discount{
     background-color: rgb(236, 105, 57);
     padding:13px;
@@ -45,12 +39,13 @@ body {
 /* icons on hover desing icons */
 .icon {
     color: white; /* Default icon color */
-    font-size: 16px; /* Slightly bigger for better visibility */
+    font-size: 16px;
     text-decoration: none;
     transition: color 0.3s ease-in-out; /* Smooth hover effect */
     position: relative;
     right: 45px; /* Default for full screen */
 }
+
 /* navbar contacts functionality or services and etc */
 .nav-item {
     font-weight: 600;
@@ -116,7 +111,7 @@ body {
     transition: transform 0.3s ease-in-out;
   }
   .nav-item.dropdown:hover .nav-link::after {
-    transform: rotate(180deg); /* Hover पर arrow ऊपर हो जाएगा */
+    transform: rotate(180deg); 
   }
 
 
@@ -274,9 +269,9 @@ text-align: justify;
 .testimonial {
   margin-top: 65px !important;
   width: 100%;
-  height: auto !important; /* Adjust height to content dynamically */
+  height: auto !important; 
   background-color: #FFFFFF !important;
-  padding: 0 15px; /* Add padding to prevent content from touching the edges */
+  padding: 0 15px; /
   box-sizing: border-box;
 }
 
@@ -314,11 +309,11 @@ text-align: justify;
 /* cart styling */
 .card {
   transition: transform 0.6s ease, box-shadow 0.6s ease; /* Smooth transition for scaling and shadow */
-  width: 100%; /* Ensure the card is full width by default */
+  width: 100%; 
 }
 
 .card:hover {
-  transform: scale(1.03); /* Slightly increase the card size (both width and height) */
+  transform: scale(1.03); 
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
 
@@ -356,22 +351,22 @@ text-align: justify;
 
 /* logo top of companies */
 .custom-heading {
-  color: #1D2420 !important; /* Matching the original color */
-  margin-top: 10vh; /* Top margin as per your original CSS */
+  color: #1D2420 !important; 
+  margin-top: 10vh; 
   font-weight: bold;
 }
 /* Desktop (Full screen) pe static rahe */
-/* ✅ Main Div (Height ko increase kar ke flexible banaya) */
+
 .international_company {
 width: 100%;
-height: auto !important; /* Height ko auto rakha taaki content ke hisab se adjust ho sake */
-min-height: 700px; /* Minimum height 700px, lekin flexible hoga */
+height: auto !important; 
+min-height: 700px; 
 background-color:rgb(235, 234, 234);
-overflow: hidden; /* Div ke andar hi rahen sab logos */
+overflow: hidden; 
 position: relative; /* Animation ke liye zaroori */
 }
 
-/* ✅ Desktop (Full screen) pe Static */
+
 /* Desktop (Full screen) pe Static */
 .logo-row {
 display: flex;
@@ -478,8 +473,8 @@ background-color: #f55d5d;
 /* iframe open for small devices */
 @media screen and (max-width: 768px) {
 .video-container {
-  width: 90vw !important; /* Chhoti screens par zyada width */
-  padding: 10px !important; /* Kam padding takay zyada space na le */
+  width: 90vw !important; 
+  padding: 10px !important;
 }
 
 .video-popup {
@@ -504,10 +499,9 @@ iframe {
 
 iframe {
   width: 100% !important;
-  height: 40vh !important; /* Aur chhoti screens par height aur kam */
+  height: 40vh !important; 
 }
 }
-
 /* end iframe open for small devices */
 
 .close-btn {
@@ -540,7 +534,7 @@ left: -17vh !important;
 }
 @media (max-width: 768px) {
   .video-popup {
-    padding: 0 5vw; /* ✅ Small devices ke liye */
+    padding: 0 5vw; 
   }
 
   .video-container {
@@ -565,7 +559,7 @@ left: -17vh !important;
 .right-content {
   text-align: center;
   max-width: 90%;
-  margin-left: 30px; /* ✅ 30px right shift */
+  margin-left: 30px; 
 }
 
 .right-content h1 {
@@ -629,7 +623,7 @@ left: -17vh !important;
   border: 1px solid white;
 }
 
-/* ✅ Fully Responsive Design */
+
 @media (min-width: 768px) {
   .banner {
     flex-direction: row;
@@ -784,3 +778,14 @@ iframe {
   z-index: 10000;
 }
 /* end video iframe */
+
+/* card hover on Testimonial */
+.card {
+  position: relative !important; 
+  transition: box-shadow 0.7s ease-in-out !important; 
+}
+
+.card:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1) !important; 
+  transform: none !important;
+}

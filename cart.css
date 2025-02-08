@@ -212,10 +212,10 @@ background-color: #000 !important;
     display: flex;
     justify-content: center;
     align-items: center !important;
-    gap: 0; /* Gap hata diya taake input aur button attach ho jaye */
+    gap: 0; 
     flex-direction: row; /* Ensure input and button stay in a row */
     width: 100%;
-    max-width: 600px; /* Increase max width for better visibility on large screens */
+    max-width: 600px;
     margin: auto;
 }
 
@@ -239,7 +239,7 @@ background-color: #000 !important;
     cursor: pointer;
     font-weight: 600 !important;
     width: 30%; /* Reduce button width */
-    max-width: 120px; /* Ensure button doesn't grow too large */
+    max-width: 120px; 
 }
 .newsletter-form button:hover{
     background-color: rgb(128, 128, 128) !important;
@@ -280,11 +280,7 @@ background-color: #000 !important;
     text-align: left;
   }
   
-  /* .hero-content h1 {
-    font-size: 3.4rem;
-    font-weight:bolder;
-    margin-bottom: 1rem;
-  } */
+
   .hero-content h1 {
     font-size: 3.4rem;
     font-weight: bolder;
@@ -299,12 +295,7 @@ background-color: #000 !important;
   margin: 1px !important ;
   background-color: rebeccapurple !important;
 }
-  /* .hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    font-weight: 600;
-    color: #FFFFFF;
-  } */
+
 
   .hero-content p {
     font-size: 1.2rem;
