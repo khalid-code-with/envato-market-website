@@ -22,12 +22,12 @@ function scrollToTop() {
 // animation with window scrolling
     document.addEventListener("DOMContentLoaded", function () {
         AOS.init({
-            duration: 1000, // Animation speed (1s)
-            once: true,  // Animation sirf ek baar chale (refresh ya first load pe)
+            duration: 1000, 
+            once: true,  
             easing: "ease-out"
         });
     });
-
+   
 
 //   close vidwo on cros open video 
     function openVideo() {
