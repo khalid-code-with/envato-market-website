@@ -10,9 +10,9 @@ window.addEventListener("scroll", function () {
 });
 
 // move button on top scrolling
-function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-}
+// function scrollToTop() {
+//     window.scrollTo({ top: 0, behavior: 'smooth' });
+// }
 
     // this show the navbar always on top dont need to refresh
     document.addEventListener("click", function () {
@@ -27,8 +27,6 @@ function scrollToTop() {
             easing: "ease-out"
         });
     });
-   
-
 //   close vidwo on cros open video 
     function openVideo() {
         document.getElementById("video-popup").style.display = "flex";
@@ -37,7 +35,4 @@ function scrollToTop() {
         document.getElementById("video-popup").style.display = "none";
       }
       
-// it remove bydefault behaviour of our website 
-document.body.addEventListener("click", function(event) {
-    event.preventDefault();
-});
+

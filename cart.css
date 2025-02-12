@@ -488,7 +488,7 @@ background-color: #000 !important;
     position: sticky;
     top: 0;
     background: white;
-    z-index: 1000;
+    color: #227aff;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 30px; 
@@ -498,7 +498,7 @@ background-color: #000 !important;
     .sticky-heading{
         position: relative;
         top: -4vh !important;
-        color: black;
+        /* color: #227aff; */
     }
 }
 .card-body {

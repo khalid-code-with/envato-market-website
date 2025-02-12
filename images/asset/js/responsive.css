@@ -210,6 +210,8 @@
   @media (max-width: 767px) {
     .text-start {
         text-align: left !important; /* Ensures the text remains left-aligned */
+        font-size: 1.2rem !important;
+        font-weight: 600 !important;
     }
 }
 
